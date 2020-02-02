@@ -6,7 +6,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 var express = require('express');
 
-var port = process.env.PORT || 5000;
+var port = 5000;
 
 var bodyParser = require('body-parser');
 
@@ -32,7 +32,7 @@ var Stock = require('./models/Stock');
 
 var jwt = require('jsonwebtoken');
 
-var bcrypt = require('bcrypt');
+var bcrypt = require('bcryptjs');
 
 require('dotenv').config();
 
