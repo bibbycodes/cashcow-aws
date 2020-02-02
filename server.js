@@ -12,7 +12,7 @@ const session = require('express-session')
 const User = require('./models/User')
 const Stock = require('./models/Stock')
 const jwt = require('jsonwebtoken')
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcryptjs')
 require('dotenv').config()
 
 

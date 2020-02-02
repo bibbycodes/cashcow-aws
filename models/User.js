@@ -1,5 +1,5 @@
 const dbConnection = require("./DbConnection");
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcryptjs')
 
 class User {
   constructor(username, id, first, last) {
