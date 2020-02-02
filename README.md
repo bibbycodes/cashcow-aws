@@ -1,6 +1,5 @@
 # This is CashCow
 
-Deploying to AWS
 Invest!
 
 ## Setup
@@ -12,6 +11,8 @@ clone & install the [frontend respository]( https://github.com/CodeKrakken/cash-
 
 To run tests
 ` npm test` or `jasmine`
+
+[Check out the App!](http://cashcow.ckrhyh6iuu.eu-west-2.elasticbeanstalk.com/)
 
 About
 -----
