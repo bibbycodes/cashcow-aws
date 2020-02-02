@@ -217,6 +217,4 @@ app.get('*', (req, res) => {
 
 // STOCKS
 
-
-
 server.listen(port, () => console.log(`Listening on port: ${port}`))
