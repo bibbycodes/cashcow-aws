@@ -1,9 +1,9 @@
 const express = require('express')
 const port = process.env.PORT || 5000
 const bodyParser = require('body-parser')
+const path = require('path')
 const app = express()
 const server = require('http').createServer(app);
-const path = require('path');
 const DataFetcher = require('./models/DataFetcher')
 const NewsFetcher = require('./models/NewsFetcher')
 const Predictor = require('./models/Predictor')
@@ -24,6 +24,8 @@ app.use(session({
   saveUninitialized: true,
   cookie: {maxAge : 60000}
 }))
+
+app.use(express.static(path.join(__dirname, 'frontend', 'build')));
 
 if (process.env.NODE_ENV == 'development') {
   app.use('/', express.static(path.join(__dirname, 'frontend/public')))
